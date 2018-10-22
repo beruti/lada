@@ -6,36 +6,42 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
     <script src="lib/jquery-3.3.1.min.js"></script>
+    <link href="images/lada.ico" rel="icon" type="image/png">
   </head>
   <body>
     <div id="landingPage">
       <div class="landingPageItem" id="landingImageContainer">
-        <span>Image</span>
         <img id="landingImage" src="./images/collage1.png" />
       </div>
       <br />
       <div class="landingPageItem" id="landingTitle">
-        <div>
+        <div id="landingTitleContainer">
           <h1 id="title">{{heading}}</h1>
           <p id="landingSubtitle"> {{paragraph}}</p>
           <div id="subtitle_links">
             <ul class="subtitle_list">
-              <li><a href="#portfolio">Part A</a></li>
-              <li><a href="#contact">Part B</a></li>
+              <li><a href="#partA">Part A</a></li>
+              <li><a href="#partB">Part B</a></li>
+            </ul>
+            <ul class="subtitle_list">
+              <li><a href="#donate">Donate</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <div id="articleContainer">
-      <div id="body">
-        <div class="paragraph" id="intro">
-        {{ paragraph }}
+      <div id="articleBody">
+        <div class="articleHeadingContainer">
+            <p class="articleHeading paragraph">Part A</p>
         </div>
+        <ul id="articleContent">
+          <p class="paragraph" v-for="p in paragraphs">
+            {{ p.content }}
+          </p>
+        </ul>
       </div>
-
     </div>
-
     <script src="js/index.js"></script>
   </body>
 </html>
