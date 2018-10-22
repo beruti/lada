@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lada</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div id="landingPage">
+      <div class="landingPageItem" id="landingImageContainer">
+        <span>Image</span>
+        <img id="landingImage" src="./images/collage1.png" />
+      </div>
+      <br />
+      <div class="landingPageItem" id="landingTitle">
+        <div>
+          <h1 id="title">{{heading}}</h1>
+          <p id="landingSubtitle"> {{paragraph}}</p>
+          <div id="subtitle_links">
+            <ul class="subtitle_list">
+              <li><a href="#portfolio">Part A</a></li>
+              <li><a href="#contact">Part B</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="articleContainer">
+      <div id="body">
+        <div class="paragraph" id="intro">
+        {{ paragraph }}
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+h3{
+  color:red
+}
+
+*{font-family: sans-serif;}
+
+#articleContainer{
+  padding: 3%
+}
+
+#title{
+  text-align: center;
+}
+
+.paragraph{
+  text-align: left;
+}
+
+#backingCollage {
+  height: 100vh;
+  width: auto;
+}
+
+#landingPage{
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.landingPageItem{
+  padding: 5px;
+  width: 50vw;
+  height: 50vh;
+  border:rgb(51, 51, 51) solid;
+  outline: rgb(51, 51, 51) none 0px;
+}
+
+#landingImageContainer{
+  overflow: auto;
+}
+
+#landingImage{
+  object-fit: cover;
+  width:100%;
+  height:100%
+}
+
+#landingTitle{
+
+
+}
+
+#landingSubtitle{
+  margin: 0 20px 1.6rem;
+  color: #121212;
+  text-align: center;
+}
+
+#subtitle_links {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.subtitle_list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.subtitle_list li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.subtitle_list li:nth-child(1) {
+  padding-left: 0;
+}
+
+.subtitle_list a {
+  font-size: 13px;
+  color: #f30;
+  font-weight: 700;
+  font-family: 'Lato',Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px #f30 solid;
+  padding: 2px;
+}
+
+.subtitle_list a:hover {
+  text-decoration: none;
+  transition: 0.20s ease-out;
+  background-color: #f30;
+  color: #fff;
+}
