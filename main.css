@@ -1,13 +1,85 @@
-h3{
-  color:red
-}
-
-*{font-family: sans-serif;}
-
 body{
   padding: 0;
   margin: 0;
 }
+
+h3{
+  color:red
+}
+
+.subtitle_list a, .articleHeading {
+  font-size: 13px;
+  color: #f30;
+  font-weight: 700;
+  font-family: 'Lato',Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px #f30 solid;
+  padding: 2px;
+}
+
+.subtitle_list a:hover {
+  text-decoration: none;
+  transition: 0.20s ease-out;
+  background-color: #f30;
+  color: #fff;
+}
+
+.subtitle_list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.articleHeadingContainer {
+  display: flex;
+  justify-content: center;
+}
+
+*{font-family: sans-serif;}
+
+@media only screen and (min-width: 325px) and (max-width: 768px) {
+  #title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #landingImage {
+    width: 100%;
+  }
+
+  .landingPageItem:first-child {
+    height: 296px;
+    overflow: hidden;
+  }
+
+  .landingPageItem:last-child {
+    margin-bottom: 40px;
+  }
+
+  #landingSubtitle {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .subtitle_list {
+    display: flex;
+    justify-content: center;
+  }
+
+  #articleContent {
+    padding: 0 40px;
+    text-align: justify;
+  }
+
+  #articleContent p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+
+
+
 
 #title{
   font-size: -webkit-xxx-large;
@@ -72,10 +144,7 @@ body{
   margin-top: 1%;
 }
 
-.subtitle_list {
-  padding: 0;
-  list-style-type: none;
-}
+
 
 .subtitle_list li {
   display: inline-block;
@@ -84,24 +153,6 @@ body{
 
 .subtitle_list li:nth-child(1) {
   padding-left: 0;
-}
-
-.subtitle_list a {
-  font-size: 13px;
-  color: #f30;
-  font-weight: 700;
-  font-family: 'Lato',Helvetica,Arial,sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px #f30 solid;
-  padding: 2px;
-}
-
-.subtitle_list a:hover {
-  text-decoration: none;
-  transition: 0.20s ease-out;
-  background-color: #f30;
-  color: #fff;
 }
 
 /*Article body*/
@@ -145,4 +196,5 @@ body{
   border: 2px #f30 solid;
   padding: 2px;
   justify-content: center;
+}
 }
