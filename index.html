@@ -9,6 +9,7 @@
     <link href="images/lada.ico" rel="icon" type="image/png">
   </head>
   <body>
+    <div id="app">
     <div id="landingPage">
       <div class="landingPageItem" id="landingImageContainer">
         <img id="landingImage" src="./images/collage1.png" />
@@ -34,7 +35,7 @@
     <div id="articleContainer">
       <div id="articleBody">
         <div class="articleHeadingContainer">
-            <a class="articleHeading paragraph">Part A</a>
+            <a class="articleHeading paragraph" id="partA" ref="partA">Part A</a>
         </div>
         <ul id="articleContent">
           <p class="paragraph" v-for="p in paragraphs">
@@ -43,6 +44,7 @@
         </ul>
       </div>
     </div>
+  </div>
     <script src="js/index.js"></script>
   </body>
 </html>

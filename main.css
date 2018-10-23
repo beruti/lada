@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h3 {
   color:red
 }
@@ -33,6 +37,11 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+}
+
+.donation:active {
+  transform: scale(0.95);
+  transition: 0.20s ease-out;
 }
 
 .donation:hover {
