@@ -1,9 +1,9 @@
-body{
+body {
   padding: 0;
   margin: 0;
 }
 
-h3{
+h3 {
   color:red
 }
 
@@ -18,6 +18,41 @@ h3{
   padding: 2px;
 }
 
+.donation {
+  height: 40px;
+  width: 200px;
+  font-weight: 700;
+  font-family: 'Lato',Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px #f30 solid;
+  color: #f30;
+  padding: 2px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.donation:hover {
+  text-decoration: none;
+  transition: 0.20s ease-out;
+  background-color: #f30;
+  color: #fff;
+}
+
+.donation_list {
+  padding: 10px 0 0 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation a {
+  text-decoration: none;
+  color: #f30;
+}
+
 .subtitle_list a:hover {
   text-decoration: none;
   transition: 0.20s ease-out;
@@ -30,26 +65,31 @@ h3{
   list-style-type: none;
 }
 
-.articleHeadingContainer {
+.articleHeadingContainer, .donation_list {
   display: flex;
   justify-content: center;
 }
 
 *{font-family: sans-serif;}
 
-@media only screen and (min-width: 325px) and (max-width: 768px) {
+@media only screen and (min-width: 325px) and (max-width: 1024px) {
   #title {
     font-size: 28px;
     text-align: center;
   }
 
   #landingImage {
+    height: 400px;
     width: 100%;
+    object-fit: cover;
   }
 
-  .landingPageItem:first-child {
-    height: 296px;
-    overflow: hidden;
+  .subtitle {
+    margin: 0 5px;
+  }
+
+  .donation a {
+    color: inherit;
   }
 
   .landingPageItem:last-child {
@@ -71,12 +111,16 @@ h3{
     text-align: justify;
   }
 
+  #articleContainer {
+    padding-top: 20px;
+  }
+
   #articleContent p {
     font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 1025px){
 
 
 
