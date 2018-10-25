@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Lada</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
@@ -9,7 +9,11 @@
     <link href="images/lada.ico" rel="icon" type="image/png">
   </head>
   <body>
+    <div id="app">
     <div id="landingPage">
+      <div class="header">
+        <div class="headertext">The Lada Rally is an awareness raising campaign for the refugee crisis. All cars and donations go to charities working with those in temporary settlement camps in Greece.</div>
+      </div>
       <div class="landingPageItem" id="landingImageContainer">
         <img id="landingImage" src="./images/collage1.png" />
       </div>
@@ -17,15 +21,16 @@
       <div class="landingPageItem" id="landingTitle">
         <div id="landingTitleContainer">
           <h1 id="title">{{heading}}</h1>
-          <p id="landingSubtitle"> {{paragraph}}</p>
+          <p id="landingSubtitle"> {{subtitle}}</p>
           <div id="subtitle_links">
-            <ul class="subtitle_list">
-              <li><a href="#partA">Part A</a></li>
-              <li><a href="#partB">Part B</a></li>
-            </ul>
-            <ul class="subtitle_list">
-              <li><a href="https://mydonate.bt.com/events/jangalawifi">Donate</a></li>
-            </ul>
+            <div class="subtitle_list">
+              <a class="subtitle" href="#partA">Part A</a>
+              <a class="subtitle" href="#partB">Part B</a>
+            </div>
+            <div class="donation_list">
+              <div>This was all done in support of xxx please:</div>
+              <a class="donation" href="https://mydonate.bt.com/events/jangalawifi">Donate</a>
+            </div>
           </div>
         </div>
       </div>
@@ -33,7 +38,7 @@
     <div id="articleContainer">
       <div id="articleBody">
         <div class="articleHeadingContainer">
-            <p class="articleHeading paragraph">Part A</p>
+            <a class="articleHeading paragraph" id="partA" ref="partA">Part A</a>
         </div>
         <ul id="articleContent">
           <p class="paragraph" v-for="p in paragraphs">
@@ -42,6 +47,7 @@
         </ul>
       </div>
     </div>
+  </div>
     <script src="js/index.js"></script>
   </body>
 </html>
