@@ -91,6 +91,10 @@ h3 {
   list-style-type: none;
 }
 
+.subtitle{
+  text-decoration: none;
+}
+
 .articleHeadingContainer, .donation_list {
   display: flex;
   justify-content: center;
@@ -128,6 +132,7 @@ h3 {
 
   .subtitle {
     margin: 0 5px;
+    text-decoration: none;
   }
 
   .donation a {
@@ -141,6 +146,17 @@ h3 {
   #landingSubtitle {
     font-size: 12px;
     text-align: center;
+  }
+
+  #donationParagaph{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .donationList{
+    padding: 10px 0 0 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   .subtitle_list {
@@ -229,8 +245,6 @@ h3 {
   text-align: center;
   margin-top: 1%;
 }
-
-
 
 .subtitle_list li {
   display: inline-block;
