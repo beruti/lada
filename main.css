@@ -96,6 +96,18 @@ h3 {
   justify-content: center;
 }
 
+#partA{
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Lato',Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px #f30 solid;
+  padding: 2px;
+  background-color: #f30;
+  color: #fff;
+}
+
 *{font-family: sans-serif;}
 
 @media only screen and (min-width: 325px) and (max-width: 1024px) {
